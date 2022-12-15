@@ -3,7 +3,7 @@ import './articles.css'
 
 export const articles = () => {
   return (
-    <section id ='articles'>Articles</section>
+    <section id ='articles'></section>
   )
 }
 export default articles
