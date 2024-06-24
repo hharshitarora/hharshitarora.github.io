@@ -28,7 +28,7 @@ export const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<MainContent />} />
-        <Route path="/businesscard" element={<Businesscard />} />
+        <Route path="businesscard" element={<Businesscard />} />
       </Routes>
     </Router>
   )
