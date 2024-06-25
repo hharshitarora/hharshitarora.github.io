@@ -1,5 +1,5 @@
 {
-  "name": "react-portfolio-website-1",
+  "name": "Harshit Arora Portfolio",
   "homepage": "https://www.harshitarora.net/",
   "version": "0.1.0",
   "private": true,
@@ -41,6 +41,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.1.1"
   }
 }
