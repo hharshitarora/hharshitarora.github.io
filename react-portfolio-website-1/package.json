@@ -1,5 +1,5 @@
 {
-  "name": "react-portfolio-website-1",
+  "name": "Harshit Arora Portfolio",
   "homepage": "https://www.harshitarora.net/",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +17,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^4.7.1",
+    "react-router-dom": "^6.23.1",
     "react-scripts": "^5.0.1",
     "react-type-animation": "^2.1.2",
     "three": "^0.173.0",
