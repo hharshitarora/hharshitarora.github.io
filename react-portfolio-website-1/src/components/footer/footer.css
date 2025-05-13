@@ -1,0 +1,90 @@
+/* Footer Styles */
+.main-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  min-height: 70px;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer-socials {
+  display: none; /* Hide horizontal socials on large screens */
+  width: 100%;
+  max-width: 270px;
+  margin: 0 auto 10px;
+  color: var(--color-text-muted); /* Use muted color for icons */
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      a {
+        padding: 10px;
+        svg {
+          width: 20px;
+          height: 20px;
+          color: inherit; /* Inherit muted color */
+        }
+        &:hover,
+        &:focus {
+          transform: translateY(-3px);
+          color: var(--color-primary); /* Use primary color on hover */
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: block; /* Show horizontal socials on small screens */
+  }
+}
+
+.footer-copy {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xxs);
+  line-height: 1;
+
+  a {
+    padding: 10px;
+    color: inherit; /* Inherit muted color */
+    text-decoration: none; /* Remove underline */
+
+     div {
+       margin-bottom: 5px; /* Space between lines */
+       &:last-child {
+         margin-bottom: 0;
+       }
+     }
+
+    &:hover,
+    &:focus {
+      color: var(--color-primary); /* Use primary color on hover */
+    }
+  }
+}
+
+/* Remove old footer styles */
+.footer__content-container, .footer__top, .footer__logo-section, .footer__logo, .footer__tagline, .footer__links-container, .footer__links-column, .footer__links, .footer__link, .footer__socials a, .footer__bottom, .footer__copyright, .back-to-top, .footer__bg-decoration {
+  display: none;
+}
+
+#footer {
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%;
+}
+
+.footer-content p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  font-family: var(--font-sans);
+}

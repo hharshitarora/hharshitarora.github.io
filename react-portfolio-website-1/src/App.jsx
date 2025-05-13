@@ -1,26 +1,25 @@
 import React from 'react'
-import Header from './components/header/Header'
-import Nav from './components/nav/nav'
-import About from './components/about/about'
-import Education from './components/education/education'
+import Profile from './components/profile/Profile'
+import Projects from './components/projects/Projects'
+import Writes from './components/writes/Writes'
 import Experience from './components/experience/Experience'
-import Article from './components/articles/articles'
-import Contact from './components/contacts/contact'
+import Education from './components/education/education'
+import Skills from './components/skills/Skills'
 import Footer from './components/footer/footer'
+import './index.css'
 
-
-export const App = () => {
+function App() {
   return (
-    <>
-      <Header />
-      <Nav />
-      <About />
-      <Education />
+    <div className="app">
+      <Profile />
+      <Projects />
+      <Writes />
       <Experience />
-      <Article />
-      <Contact />
+      <Education />
+      <Skills />
       <Footer />
-    </>
+    </div>
   )
 }
+
 export default App

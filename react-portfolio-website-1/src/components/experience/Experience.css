@@ -1,156 +1,117 @@
-/*=========WORK EX=======*/
-.work_exp_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+/* Experience Section Styles */
+#experience {
+  margin-left: 0;
+  padding-left: 0;
+  width: 100%;
 }
 
-.work_exp_container > div {
-    background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
+#experience h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--color-heading);
+  letter-spacing: -0.025em;
+  border-bottom: none;
 }
 
-.work_exp_container > div:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
-.exp_content{
-    display: grid;
+.experience-item {
+  background-color: var(--color-bg-variant);
+  padding: 0;
+  border-radius: 0;
+  border: none;
+}
+
+.job-header {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr) minmax(0, 1fr);
+  align-items: center;
+  margin-bottom: 0.25rem;
+  width: 100%;
+}
+
+.job-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-heading);
+  letter-spacing: -0.01em;
+  margin: 0;
+  padding-right: 1rem;
+}
+
+.job-location {
+  font-size: 1rem;
+  color: var(--color-heading);
+  text-align: center;
+  font-family: var(--font-sans);
+}
+
+.job-period {
+  font-size: 0.95rem;
+  color: var(--color-heading);
+  text-align: right;
+  font-family: var(--font-sans);
+}
+
+.job-subheader {
+  margin-bottom: 1rem;
+}
+
+.company-info {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-sans);
+}
+
+.job-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #experience {
+    margin-bottom: 2rem;
+  }
+  
+  .job-header {
     grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+  
+  .job-title, .job-location, .job-period {
+    text-align: left;
+    padding-right: 0;
+  }
 }
 
-.bLogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: auto;
-    margin-bottom: 2rem;
+@media (max-width: 480px) {
+  #experience h2 {
+    font-size: 1.25rem;
+  }
+  
+  .job-title {
+    font-size: 1.1rem;
+  }
 }
 
-.eyLogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: auto;
-    margin-bottom: 2rem;
-}
-
-.hnsLogo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px;
-    height: auto;
-    margin-bottom: 2rem;
-}
-
-/* ================ MEDIA QUERIES (Medium) ============*/
-@media screen and (max-width: 1024px) {
-    .work_exp_container{
-        grid-template-columns: 1fr;
-    }
-    .work_exp_container > div {
-        width: 80%;
-        padding: 2rem;
-        margin: 0 auto;
-    }
-}
-
-/* ================ MEDIA QUERIES (Small) ============*/
-@media screen and (max-width: 600px) {
-    .Tech_skills_container{
-        gap: 1rem;
-    }
-    .Tech_skills_container > div {
-        width: 100%;
-        padding: 2rem 1rem;
-        margin: 0 auto;
-    }
-}
-
-/*===========TECH SKILLS===========*/
-.Tech_skills_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    
-}
-
-.Tech_skills_container > div {
-    background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-}
-
-.Tech_skills_container > div:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
-}
-
-.Tech_skills_container > div h3 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--color-primary);
-}
-
-h2 {
-    text-align: center;
-}
-
-.tSkills{
-    margin-top: 3rem;
-}
-
-.pl_content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 1rem;
-    column-gap: 2rem;
-}
-
-.pl_details {
-    display: flex;
-    gap: 1rem;
-}
-
-.pl_details-icon{
-    margin-top: 6px;
-    color: var(--color-primary);
-}
-/* ================ MEDIA QUERIES (Medium) ============*/
-@media screen and (max-width: 1024px) {
-    .Tech_skills_container{
-        grid-template-columns: 1fr;
-    }
-    .Tech_skills_container > div {
-        width: 80%;
-        padding: 2rem;
-        margin: 0 auto;
-    }
-    .pl_content{
-        padding: 1rem;
-    }
-}
-
-/* ================ MEDIA QUERIES (Small) ============*/
-@media screen and (max-width: 600px) {
-    .Tech_skills_container{
-        gap: 1rem;
-    }
-    .Tech_skills_container > div {
-        width: 100%;
-        padding: 2rem 1rem;
-        margin: 0 auto;
-    }
-    .pl_content{
-        padding: 1rem;
-    }
+/* Remove old styles - these are handled in index.css */
+.section-subtitle, 
+.experience__container, 
+.experience__content, 
+.experience__item, 
+.experience__icon, 
+.experience__item-name, 
+.experience__responsibilities, 
+.experience__responsibility,
+.experience__technologies,
+.experience__technology {
+  display: none;
 }

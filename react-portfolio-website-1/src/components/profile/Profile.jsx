@@ -23,10 +23,10 @@ const Profile = () => {
         <a href="tel:814-753-2456" aria-label="Phone">
           <FaPhone />
         </a>
-        <a href="https://github.com/harshitarora13" aria-label="GitHub">
+        <a href="https://github.com/hharshitarora" aria-label="GitHub">
           <FaGithub />
         </a>
-        <a href="https://linkedin.com/in/harshit-arora" aria-label="LinkedIn">
+        <a href="https://linkedin.com/in/hharshitarora" aria-label="LinkedIn">
           <FaLinkedin />
         </a>
       </div>
