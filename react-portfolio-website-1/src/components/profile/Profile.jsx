@@ -7,15 +7,16 @@ const Profile = () => {
   return (
     <section id="profile">
       <img src={ME} alt="Harshit Arora" className="profile-photo" />
-      
+
       <h1>Harshit Arora</h1>
       <p>
-        Building the smoothest and most efficient cart and checkout experience for Michaels Stores.
-        Technology Enthusiast, always looking for new and better ways to do things and keep up with the latest trends.
-        Previously worked at Barclays Investment Bank, Ernst & Young, and Hughes Network Systems.
+        Software Engineer with 5+ years across enterprise and early-stage companies. Beyond enterprise engineering,
+        I build from zero: founding engineer on a social video platform (Stitchit), shipped a voice AI system into
+        live client pilots, and launched Boss Dial — a Chrome extension that's live on the Web Store.
+        Strong foundation in distributed systems, APIs, and cloud, with a bias toward building things that ship.
       </p>
       <p className="location">Frisco, TX</p>
-      
+
       <div className="icon-bar">
         <a href="mailto:harshitar10@protonmail.com" aria-label="Email">
           <FaEnvelope />
@@ -34,4 +35,4 @@ const Profile = () => {
   )
 }
 
-export default Profile 
+export default Profile

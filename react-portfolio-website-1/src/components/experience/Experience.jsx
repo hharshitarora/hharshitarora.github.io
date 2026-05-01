@@ -7,36 +7,45 @@ const Experience = () => {
     {
       id: 1,
       company: 'Michaels Store Inc.',
-      position: 'Software Developer 2',
+      position: 'Software Engineer',
       period: 'Jan 2023 - Present',
       location: 'Dallas, Texas',
       jobType: 'Full-Time',
-      description: 'Led backend development and architecture for customer-facing features including PLCC, Impulse Cart, and loyalty voucher systems, driving secure and performant API design. Designed and implemented resilient offline transaction handling during peak season outages, ensuring fault tolerance and improved checkout reliability. Integrated third-party APIs from Signifyd and Eigen to support fraud protection, chargebacks, and Canadian gift card services. Engineered data purging workflows in SpannerDB for payment transactions as part of GCP cost optimization. Upgraded core services to the latest JDK and Spring Boot versions, achieving 80% test coverage and strengthening system maintainability.'
+      description: 'Led backend design and development for high-traffic customer features including PLCC, Impulse Cart, and loyalty vouchers, reducing API latency by 25% using Java, Spring Boot, MongoDB, and SpannerDB. Built a resilient offline transaction handling system that maintained 99% uptime during Black Friday and peak holiday surges. Integrated Signifyd for fraud detection and Eigen for Canadian gift card processing. Engineered SpannerDB purging workflows that cleared 300+ GB of payment transaction data, directly reducing GCP infrastructure costs. Built personal agentic development workflows using Codex and Factory AI to consistently ship cleaner and more stable code.'
     },
     {
       id: 2,
-      company: 'Barclays Services Corp.',
-      position: 'Software Developer',
-      period: 'Aug 2020 - Present',
-      location: 'New York City, New York',
-      jobType: 'Full-Time',
-      description: 'End-to-end development of Java methods to perform essential tasks based on business needs. Configured kdb+ databases for new features and data persistence, integrated with Java for a cohesive setup. Performed complete lifecycle for testing and deployments of new components, worked on environment stabilization post-deployment. Worked in cross-functional teams to drive new changes and understand all aspects of the business. Aided in documentation using Confluence and worked with development tools like TeamCity and JIRA.'
+      company: 'Stitchit',
+      position: 'Founding Backend Engineer',
+      period: 'Nov 2023 - Aug 2024',
+      location: 'Remote',
+      jobType: 'Startup',
+      description: 'Stood up the entire backend from scratch as the first backend engineer, designing all APIs and server infrastructure for an iOS-first short-form video platform using Node.js and Python. Drove migration from a monolith to a serverless architecture on AWS Lambda with AWS MediaConvert, cutting infrastructure costs by 30% and reducing video processing time by 60% during beta. Owned all AWS infrastructure setup and CI/CD pipeline via GitHub Actions; mentored two engineers and led backend technical direction across a 6-person team.'
     },
     {
       id: 3,
+      company: 'Barclays Services Corp.',
+      position: 'Software Developer',
+      period: 'Aug 2020 - Jan 2023',
+      location: 'New York City, New York',
+      jobType: 'Full-Time',
+      description: 'Delivered enhancements across 5-6 core trading flows, extending data persistence and onboarding new users within a Java trading system in a compliance-critical financial environment. Integrated kdb+ databases with Java services to handle TB-scale bond and financial transaction data, supporting real-time trading operations and operational reporting. Owned every third bi-weekly release on rotation, managing deployment and post-release stabilization.'
+    },
+    {
+      id: 4,
       company: 'Ernst and Young',
       position: 'Technology Advisory Intern',
       period: 'Jun 2019 - Aug 2019',
       location: 'Dallas, Texas',
       jobType: 'Internship',
-      description: 'Worked on various features for the android app, a location guiding service that would aid the client to manage its staff and customers to manage their work. Developed the low-level architecture using Kotlin Clean Architecture to improve the separation of code, have high level of abstraction, and efficient testing. Collaborated with the client directly and used the agile methodology via Jira to smooth out the deployment process.'
+      description: 'Worked on various features for an Android location-guiding app to help clients manage staff and customers. Developed low-level architecture using Kotlin Clean Architecture to improve separation of concerns and enable efficient testing. Collaborated directly with the client and used agile methodology via Jira to streamline the deployment process.'
     }
   ];
 
   return (
     <section id="experience" className="section">
       <h2>Work Experience</h2>
-      
+
       <div className="experience-container">
         {experiences.map((job) => (
           <div key={job.id}>
@@ -44,11 +53,11 @@ const Experience = () => {
               {job.position} <span className="location">{job.location}</span>
               <span className="date-range">{job.period}</span>
             </div>
-            
+
             <div>
               {job.company} <span className="tag">{job.jobType}</span>
             </div>
-            
+
             <p className="job-description">{job.description}</p>
           </div>
         ))}

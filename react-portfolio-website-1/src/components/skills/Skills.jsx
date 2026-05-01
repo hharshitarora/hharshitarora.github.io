@@ -5,26 +5,26 @@ const Skills = () => {
   const skillCategories = [
     {
       category: "Programming Languages",
-      skills: ["Java", "Python", "Go", "Swift", "React", "HTML", "CSS", "Javascript"]
+      skills: ["Java", "Python", "Node.js", "JavaScript", "Go", "Swift", "React", "HTML", "CSS"]
     },
     {
       category: "LLM/AI",
-      skills: ["Langflow", "Hugging Face", "GPT", "Pytorch", "Tensorflow"]
+      skills: ["Vapi", "Bland", "n8n", "LangChain", "GPT", "Hugging Face", "Pytorch", "Tensorflow"]
     },
     {
       category: "Database",
-      skills: ["Mongo", "MySQL", "Spanner", "Firebase", "MariaDB", "DynamoDB"]
+      skills: ["MongoDB", "MySQL", "Spanner", "Firebase", "DynamoDB", "kdb+"]
     },
     {
-      category: "Software/Packages",
-      skills: ["GCP", "AWS", "JIRA", "Bitbucket", "Maven", "Git", "Numpy", "Pandas", "Tidyverse"]
+      category: "Infrastructure & Tools",
+      skills: ["AWS", "GCP", "Spring Boot", "Elasticsearch", "Datadog", "GitHub Actions", "Docker", "JIRA", "Git"]
     }
   ];
 
   return (
     <section id="skills" className="section">
       <h2>Technical Skills</h2>
-      
+
       <div className="skills-container">
         {skillCategories.map((category, index) => (
           <div key={index} className="skill-category">
@@ -41,4 +41,4 @@ const Skills = () => {
   )
 }
 
-export default Skills 
+export default Skills
