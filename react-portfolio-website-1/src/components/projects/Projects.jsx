@@ -16,17 +16,17 @@ const Projects = () => {
       </p>
 
       <div className="projects-grid">
-        {/* Project 1 - Voice AI Lead Generation */}
+        {/* Project 1 - VybeWorks */}
         <div className="project-card">
           <div className="project-header">
             <div className="project-image-container judge-logo">
               <img
                 src={ComingSoonLogo}
-                alt="Voice AI Lead Generation System"
+                alt="VybeWorks"
                 className="project-image"
               />
             </div>
-            <span className="project-title">Voice AI Lead Generation</span>
+            <span className="project-title">VybeWorks</span>
           </div>
           <div className="project-content">
             <p className="project-description">
@@ -42,7 +42,7 @@ const Projects = () => {
               <span className="project-tech">n8n</span>
             </div>
             <div className="project-links">
-              <span className="project-link">Code available upon request</span>
+              <a href="https://www.vybeworks.ai/" target="_blank" rel="noopener noreferrer" className="project-link">vybeworks.ai</a>
             </div>
           </div>
         </div>
