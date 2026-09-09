@@ -1,7 +1,6 @@
 import React from 'react'
-import { FaEnvelope, FaPhone, FaGithub, FaLinkedin } from 'react-icons/fa'
 import './Profile.css'
-import ME from '../../assets/IMG_0782.JPG'
+import ME from '../../assets/headshot.jpg'
 
 const Profile = () => {
   return (
@@ -10,26 +9,19 @@ const Profile = () => {
 
       <h1>Harshit Arora</h1>
       <p>
-        Software Engineer with 5+ years across enterprise and early-stage companies. Beyond enterprise engineering,
-        I build from zero: founding engineer on a social video platform (Stitchit), shipped a voice AI system into
-        live client pilots, and launched Boss Dial — a Chrome extension that's live on the Web Store.
-        Strong foundation in distributed systems, APIs, and cloud, with a bias toward building things that ship.
+        Six years building software, and I have done both halves of it. 0 &rarr; 1: backend from scratch
+        for a video platform, and a voice agent now running in client production. And at scale, cart,
+        checkout and payments at Michaels at 1,250 requests a second, and trading systems at Barclays.
+        Looking for the next challenge.
       </p>
-      <p className="location">Frisco, TX</p>
+      <p className="location">Dallas, TX</p>
 
-      <div className="icon-bar">
-        <a href="mailto:harshitar10@protonmail.com" aria-label="Email">
-          <FaEnvelope />
-        </a>
-        <a href="tel:814-753-2456" aria-label="Phone">
-          <FaPhone />
-        </a>
-        <a href="https://github.com/hharshitarora" aria-label="GitHub">
-          <FaGithub />
-        </a>
-        <a href="https://linkedin.com/in/hharshitarora" aria-label="LinkedIn">
-          <FaLinkedin />
-        </a>
+      <div className="contact">
+        <a href="mailto:harshitar10@protonmail.com">harshitar10@protonmail.com</a>
+        <span className="sep">/</span>
+        <a href="https://github.com/hharshitarora" target="_blank" rel="noopener noreferrer">github</a>
+        <span className="sep">/</span>
+        <a href="https://linkedin.com/in/hharshitarora" target="_blank" rel="noopener noreferrer">linkedin</a>
       </div>
     </section>
   )

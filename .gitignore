@@ -31,3 +31,9 @@ yarn-error.log*
 # OS files
 .DS_Store
 Thumbs.db
+
+# Local backups (not for the repo)
+*.bak
+*.bak-*
+src.bak-*/
+react-portfolio-website-1/src.bak-*/

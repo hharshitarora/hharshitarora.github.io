@@ -5,34 +5,28 @@ const Education = () => {
   const educationData = [
     {
       id: 1,
-      degree: 'Master of Science in Data Science',
+      degree: 'MS, Data Science',
       institution: 'University of Texas at Austin',
-      location: 'Austin, TX',
-      period: '2023 - 2025',
-      type: 'Master\'s Program'
+      period: '2023 - 2026'
     },
     {
       id: 2,
-      degree: 'Bachelor of Science in Computer Engineering',
-      institution: 'The Pennsylvania State University',
-      location: 'University Park, PA',
-      period: '2016 - 2020',
-      type: 'Bachelor\'s Program'
+      degree: 'BS, Computer Engineering',
+      institution: 'Penn State University',
+      period: '2016 - 2020'
     }
   ]
 
   return (
     <section id="education" className="section">
       <h2>Education</h2>
-      <div className="education-container">
+      <div className="rows">
         {educationData.map((item) => (
-          <div key={item.id}>
-            <div className="job-title">
-              {item.degree} <span className="location">{item.location}</span>
-              <span className="date-range">{item.period}</span>
-            </div>
-            <div>
-              {item.institution} <span className="tag">{item.type}</span>
+          <div className="row" key={item.id}>
+            <div className="row-head">
+              <span className="row-title">{item.degree}</span>
+              <span className="row-meta">{item.institution}</span>
+              <span className="row-date">{item.period}</span>
             </div>
           </div>
         ))}
