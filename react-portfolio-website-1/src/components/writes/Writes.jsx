@@ -4,6 +4,12 @@ import './Writes.css'
 const Writes = () => {
   const articles = [
     {
+      id: 0,
+      title: "The Cart That Went Missing: How First Principles Thinking Solves Ambiguous Engineering Bugs",
+      date: "December 2025",
+      link: "https://medium.com/@hharshitarora/the-cart-that-went-missing-how-first-principles-thinking-solves-ambiguous-engineering-bugs-395ac6fef88f"
+    },
+    {
       id: 1,
       title: "Are Digital Goods Really Taking Over Our Life?",
       date: "January 2025",
