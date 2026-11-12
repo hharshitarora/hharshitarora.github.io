@@ -22,19 +22,28 @@ const Projects = () => {
       id: 3,
       title: 'Incident Triage Agent',
       description: 'LangGraph agent that reads a crash log and traces the failure back to the commit that caused it.',
-      links: [{ label: 'source', href: 'https://github.com/hharshitarora/incident-triage-agent' }]
+      links: [
+        { label: 'demo', href: 'https://hharshitarora.github.io/incident-triage-agent/' },
+        { label: 'source', href: 'https://github.com/hharshitarora/incident-triage-agent' }
+      ]
     },
     {
       id: 4,
       title: 'LLM Evaluation Gate',
       description: 'CI quality gate for a non-deterministic agent. Fails the build when output degrades against a scored eval set.',
-      links: [{ label: 'source', href: 'https://github.com/hharshitarora/llm-eval-gate' }]
+      links: [
+        { label: 'demo', href: 'https://hharshitarora.github.io/llm-eval-gate/' },
+        { label: 'source', href: 'https://github.com/hharshitarora/llm-eval-gate' }
+      ]
     },
     {
       id: 5,
       title: 'Grounded Voice RAG Agent',
       description: 'Voice RAG agent that measures when it should decline to answer rather than guess.',
-      links: [{ label: 'source', href: 'https://github.com/hharshitarora/grounded-voice-agent' }]
+      links: [
+        { label: 'demo', href: 'https://hharshitarora.github.io/grounded-voice-agent/' },
+        { label: 'source', href: 'https://github.com/hharshitarora/grounded-voice-agent' }
+      ]
     },
     {
       id: 6,
