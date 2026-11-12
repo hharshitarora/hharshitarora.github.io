@@ -11,7 +11,7 @@ const Profile = () => {
       <p>
         Six years building software, and I have done both halves of it. 0 &rarr; 1: backend from scratch
         for a video platform, and a voice agent now running in client production. And at scale, cart,
-        checkout and payments at Michaels at 1,250 requests a second, and trading systems at Barclays.
+        checkout and payments at Michaels at about 2,000 requests a second, and trading systems at Barclays.
         Looking for the next challenge.
       </p>
       <p className="location">Dallas, TX</p>

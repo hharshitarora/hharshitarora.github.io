@@ -8,7 +8,7 @@ const Experience = () => {
       company: 'Michaels',
       position: 'Software Engineer',
       period: 'Jan 2023 to now',
-      description: 'Cart, checkout and payments backend. Peaks at 1,250 requests a second at 99.8% uptime through holiday surges. Took checkout latency from 800ms to 600ms. Built an LLM triage agent now used by 15 engineers on other teams.'
+      description: 'Cart, checkout and payments backend. Peaks at 2,000 requests a second at 99.95% uptime through the year. Took checkout latency from 800ms to 600ms. Built an LLM triage agent now used by 15 engineers on other teams.'
     },
     {
       id: 2,

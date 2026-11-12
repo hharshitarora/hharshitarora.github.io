@@ -11,11 +11,11 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: 'Boss Dial',
-      description: 'Chrome extension that rewrites workplace messages before you send them. Live on the Chrome Web Store.',
+      title: 'callgrade',
+      description: "Grades voice agent calls from five platforms' exports, and measures whether its own LLM judge can be trusted.",
       links: [
-        { label: 'bossdial.com', href: 'https://bossdial.com' },
-        { label: 'source', href: 'https://github.com/hharshitarora/reply-like-a-boss' }
+        { label: 'demo', href: 'https://hharshitarora.github.io/callgrade/' },
+        { label: 'source', href: 'https://github.com/hharshitarora/callgrade' }
       ]
     },
     {
@@ -35,6 +35,15 @@ const Projects = () => {
       title: 'Grounded Voice RAG Agent',
       description: 'Voice RAG agent that measures when it should decline to answer rather than guess.',
       links: [{ label: 'source', href: 'https://github.com/hharshitarora/grounded-voice-agent' }]
+    },
+    {
+      id: 6,
+      title: 'Boss Dial',
+      description: 'Chrome extension that rewrites workplace messages before you send them. Live on the Chrome Web Store.',
+      links: [
+        { label: 'bossdial.com', href: 'https://bossdial.com' },
+        { label: 'source', href: 'https://github.com/hharshitarora/reply-like-a-boss' }
+      ]
     }
   ]
 
